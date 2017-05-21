@@ -230,8 +230,36 @@ namespace PIC_Simulator.PIC
 				TaktgeberZahler += frequenz;
 				if (TaktgeberZahler >= TaktgeberFrequenz)
 				{
+					if (TaktgeberAdresse == ADDR_PORT_A)
+					{
+						var wert = SetBit(GetRegisterOhneBank(TaktgeberAdresse), TaktgeberBitnummer, !GetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer));
+
+						var ta = Register[ADDR_TRIS_A];
+
+						if (GetBit(ta, TaktgeberBitnummer))
+						{
+							Latch_RA = (byte)(wert & 0xFF);
+							Register[ADDR_PORT_A] = wert;
+						}
+					}
+					else if (TaktgeberAdresse == ADDR_PORT_B)
+					{
+						var wert = SetBit(GetRegisterOhneBank(TaktgeberAdresse), TaktgeberBitnummer, !GetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer));
+
+						var tb = Register[ADDR_TRIS_B];
+
+						if (GetBit(tb, TaktgeberBitnummer))
+						{
+							Latch_RB = (byte)(wert & 0xFF);
+							Register[ADDR_PORT_B] = wert;
+						}
+					}
+					else
+					{
+						SetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer, !GetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer));
+					}
+
 					TaktgeberZahler = 0;
-					SetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer, !GetRegisterOhneBank(TaktgeberAdresse, TaktgeberBitnummer));
 				}
 			}
 
@@ -842,7 +870,7 @@ namespace PIC_Simulator.PIC
 				PCCounter = (int) (high | wert);
 			}
 
-			if (index == ADDR_INDF) // indirekte Adresierung
+			if (index == ADDR_INDF) // indirekte adresierung
 			{
 				if (Register[ADDR_FSR] % 0x80 != 0) Register[Register[ADDR_FSR]] = (byte)(wert & 0xFF);
 				return;

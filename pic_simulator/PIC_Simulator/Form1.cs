@@ -251,8 +251,9 @@ namespace PIC_Simulator
 			btn_RB_Tris_6.Text = (programm.GetRegisterOhneBank(PICProgramm.ADDR_TRIS_B, 6) ? "i" : "o");
 			btn_RB_Tris_7.Text = (programm.GetRegisterOhneBank(PICProgramm.ADDR_TRIS_B, 7) ? "i" : "o");
 
-			if (btnWD1.Font.Bold != programm.WatchDog.Aktiviert) btnWD1.Font = new Font(btnWD1.Font, programm.WatchDog.Aktiviert ? FontStyle.Bold : FontStyle.Regular);
+			if (btnWD1.Font.Bold != programm.WatchDog.Aktiviert) btnWD1.Font = new Font(btnWD1.Font, programm.WatchDog.Aktiviert ? FontStyle.Bold : FontStyle.Regular); 
 			if (btnWD0.Font.Bold == programm.WatchDog.Aktiviert) btnWD0.Font = new Font(btnWD0.Font, programm.WatchDog.Aktiviert ? FontStyle.Regular : FontStyle.Bold);
+			if (btnClockStart.Font.Bold != programm.TaktgeberAktiviert) btnClockStart.Font = new Font(btnClockStart.Font, programm.TaktgeberAktiviert ? FontStyle.Bold : FontStyle.Regular);
 		}
 
 		private void box_CodeView_DoubleClick(object sender, EventArgs e)
