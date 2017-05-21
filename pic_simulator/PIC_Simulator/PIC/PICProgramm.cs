@@ -174,7 +174,7 @@ namespace PIC_Simulator.PIC
 
 				bool ok = true;
 
-				for (int i = 0; i < 14; i++)
+				for (int i = 0; i < 14; i++) //Jeder befehl wird durchgegangen und über AND wird geschaut ob der Befehl und der Code identisch sind
 				{
 					if (cmd[i] == '0' && bin[i] == '0') continue;
 					if (cmd[i] == '1' && bin[i] == '1') continue;
