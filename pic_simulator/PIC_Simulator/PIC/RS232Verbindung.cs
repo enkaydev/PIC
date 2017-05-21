@@ -14,7 +14,7 @@ namespace PIC_Simulator.PIC
 		private Form1 Fenster;
 
 		private Timer timer;
-
+        // RS232 Übertragung starten 
 		public RS232Verbindung()
 		{
 			timer = new Timer();
@@ -22,7 +22,7 @@ namespace PIC_Simulator.PIC
 			timer.Interval = 500;
 			timer.Enabled = true;
 		}
-
+        // Hören oder Senden -> Senden oder Empfangen
 		private void TimerOnTick(object sender, EventArgs eventArgs)
 		{
 			if (ComPort == null) return;
@@ -31,7 +31,7 @@ namespace PIC_Simulator.PIC
 			SendData();
 			RecieveData();
 		}
-
+        // Vorhandene Ports holen
 		public List<string> GetSerialPorts()
 		{
 			string[] ArrayComPortsNames = null;
@@ -51,7 +51,7 @@ namespace PIC_Simulator.PIC
 
 			return result.OrderBy(p => p).ToList();
 		}
-
+        // Verbindung mit COM Device aufbauen Baud Rate 4800 Datenbits 8 
 		public void Connect(string port, TextBox logbox, PICProgramm prog, Form1 f)
 		{
 			ComPort = new SerialPort();
@@ -84,14 +84,14 @@ namespace PIC_Simulator.PIC
 
 			ComPort = null;
 		}
-
+        // Verbindung abbauen 
 		public void Disconnect()
 		{
 			if (ComPort == null) return;
 			ComPort.Close();
 			ComPort = null;
 		}
-
+        // Senden von Werten aus PORTA, TRISA, PORTB, TRISB
 		private void SendData()
 		{
 			string p_a = encodeByte(Programm.GetRegisterOhneBank(PICProgramm.ADDR_PORT_A));
@@ -103,7 +103,7 @@ namespace PIC_Simulator.PIC
 
 			Send_RS232(send);
 		}
-
+        // Sendungsverlauf in Textpost schreiben
 		private void Send_RS232(string txt)
 		{
 			if (txt != string.Empty)
@@ -112,7 +112,7 @@ namespace PIC_Simulator.PIC
 				TextBox.Text += "> " + txt + "\r\n";
 			}
 		}
-
+        // Empfangen des Datenstrings
 		private void RecieveData()
 		{
 			string x = ReadDataSegment();
@@ -157,7 +157,9 @@ namespace PIC_Simulator.PIC
 			}
 		}
 
-		private string encodeByte(uint b)
+        //Encodieren des Datenstrings
+
+        private string encodeByte(uint b)
 		{
 			char c1 = (char)(0x30 + ((b & 0xF0) >> 4));
 			char c2 = (char)(0x30 + (b & 0x0F));
@@ -184,7 +186,7 @@ namespace PIC_Simulator.PIC
 				return null;
 			}
 		}
-
+        // Datensegment lesen 
 		private string ReadDataSegment()
 		{
 			string s = "";
