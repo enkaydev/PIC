@@ -21,6 +21,7 @@ namespace PIC_Simulator.PIC
 
 	public class PICProgramm
 	{
+        // Konstanten für Addressierung 
 		public const uint ADDR_INDF = 0x00;
 		public const uint ADDR_TMR0 = 0x01;
 		public const uint ADDR_PCL = 0x02;
@@ -68,7 +69,7 @@ namespace PIC_Simulator.PIC
 
 		public const uint INTERRUPT_SERVICE_ADDRESS = 0x04;
 
-
+        // Befehlserkennung Werte
 		public const string ADDWF  = "000111dfffffff";
 		public const string ANDWF  = "000101dfffffff";
 		public const string CLRF   = "0000011fffffff";
@@ -107,6 +108,8 @@ namespace PIC_Simulator.PIC
 		public const string SUBLW  = "11110xkkkkkkkk";
 		public const string XORLW  = "111010kkkkkkkk";
 
+
+        // Deklaration und Initialiserung der Programmvariablen 
 		public string[] ALL_COMMANDS = {ADDWF, ANDWF, CLRF, CLRW, COMF, DECF, DECFSZ, INCF, INCFSZ, IORWF, MOVF, MOVWF, NOP, RLF, RRF, SUBWF, SWAPF, XORWF, BCF, BSF, BTFSC, BTFSS, ADDLW, ANDLW, CALL, CLRWDT, GOTO, IORLW, MOVLW, RETFIE, RETLW, RETURN, SLEEP, SUBLW, XORLW  };
 
 		public List<PICBefehl> befehle;
@@ -143,7 +146,7 @@ namespace PIC_Simulator.PIC
 
 			Reset();
 		}
-
+        // Laden der Befehle aus Datei
 		public void Laden(string code)
 		{
 			befehle = new List<PICBefehl>();
@@ -160,6 +163,7 @@ namespace PIC_Simulator.PIC
 			}
 		}
 
+        // Befehlserkunng anhand bitweisem Vergleich 
 		private PICBefehl FindeBefehl(string zeile, int zeilennummer)
 		{
 			foreach (var cmd in ALL_COMMANDS)
@@ -211,7 +215,7 @@ namespace PIC_Simulator.PIC
 
 			throw new Exception("konnte befehl nicht finden: " + zeile);
 		}
-
+        // Umrechung hexadezimal nach binär
 		private string hex2binary(string hexvalue)
 		{
 			string binaryval = "";
@@ -219,6 +223,7 @@ namespace PIC_Simulator.PIC
 			return binaryval;
 		}
 
+        // Schrittweise Ausführung des Programms 
 		public bool Step(int frequenz)
 		{
 			if (PCCounter >= befehle.Count) return true;
@@ -934,7 +939,7 @@ namespace PIC_Simulator.PIC
 
 			Register[index] = (byte)(wert & 0xFF);
 		}
-
+        // RB Interrupt
 		private void Interrupt_RB(byte alt, byte neu)
 		{
 			// RB0/INT
@@ -970,7 +975,7 @@ namespace PIC_Simulator.PIC
 				PortBInterrupt();
 			}
 		}
-
+        // Register ohne Bank laden
 		public byte GetRegisterOhneBank(uint index)
 		{
 			if (index == ADDR_UNIMPL_A) return 0;
@@ -996,7 +1001,7 @@ namespace PIC_Simulator.PIC
 
 			return Register[index];
 		}
-
+        // Register mit Bank laden
 		private byte GetRegister(uint index)
 		{
 			if ((Register[ADDR_STATUS] & STATUS_BIT_RP0) == STATUS_BIT_RP0)
@@ -1008,7 +1013,7 @@ namespace PIC_Simulator.PIC
 				return GetRegisterOhneBank(index);
 			}
 		}
-
+        // Register schreiben
 		private void SetRegister(uint index, uint wert)
 		{
 			if (GetBit(Register[ADDR_STATUS], STATUS_BIT_RP0))
@@ -1020,7 +1025,7 @@ namespace PIC_Simulator.PIC
 				SetRegisterOhneBank(index, wert);
 			}
 		}
-
+        // Register ohne Bank schreiben 
 		public void SetRegisterOhneBank(uint index, uint bit, bool wert)
 		{
 			SetRegisterOhneBank(index, SetBit(GetRegisterOhneBank(index), bit, wert));
@@ -1035,7 +1040,7 @@ namespace PIC_Simulator.PIC
 		{
 			return GetBit(GetRegisterOhneBank(index), bit);
 		}
-
+        // Carry Bit setzen
 		public static bool AdditionDigitCarry(byte a, byte b)
 		{
 			a &= 0x0F;
@@ -1043,7 +1048,7 @@ namespace PIC_Simulator.PIC
 
 			return (a + b) > 0x0F;
 		}
-
+        // Carry Bit löschen
 		public static bool SubtractionDigitCarry(byte a, byte b)
 		{
 			int xa = a & 0x0F;
@@ -1071,7 +1076,7 @@ namespace PIC_Simulator.PIC
 		{
 			return (byte)(bit ? (val | SHL(1, pos)) : (val & ~SHL(1, pos)));
 		}
-
+        // Reset des Programmspeichers und aller Variablen
 		public void Reset()
 		{
 			Register = new byte[0x100];
@@ -1097,6 +1102,7 @@ namespace PIC_Simulator.PIC
 			PCCounter = 0;
 		}
 
+        // Timer Interrupt 
 		public void TimerInterrupt()
 		{
 			if (!GetRegisterOhneBank(ADDR_INTCON, INTCON_BIT_GIE)) return;
@@ -1109,7 +1115,7 @@ namespace PIC_Simulator.PIC
 			Stack.Push((uint)PCCounter);
 			PCCounter = (int) INTERRUPT_SERVICE_ADDRESS;
 		}
-
+        //RBO Interrupt
 		public void RB0Interrupt()
 		{
 			if (!GetRegisterOhneBank(ADDR_INTCON, INTCON_BIT_GIE)) return;
@@ -1122,7 +1128,7 @@ namespace PIC_Simulator.PIC
 			Stack.Push((uint)PCCounter);
 			PCCounter = (int)INTERRUPT_SERVICE_ADDRESS;
 		}
-
+        // PORTB Interrupt
 		public void PortBInterrupt()
 		{
 			if (!GetRegisterOhneBank(ADDR_INTCON, INTCON_BIT_GIE)) return;
