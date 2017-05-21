@@ -40,8 +40,8 @@ namespace PIC_Simulator
 			lvSpecial.Items.Add(new ListViewItem(new[] { "RA (Backing)", "0b00000000" }));
 			lvSpecial.Items.Add(new ListViewItem(new[] { "RB (Backing)", "0b00000000" }));
 
-			lvSpecial.Items.Add(new ListViewItem(new[] { "Status[DC]", "0" }));
-			lvSpecial.Items.Add(new ListViewItem(new[] { "Status[C]",  "0" }));
+			lvSpecial.Items.Add(new ListViewItem(new[] { "Status[C]", "0" }));
+			lvSpecial.Items.Add(new ListViewItem(new[] { "Status[DC]",  "0" }));
 			lvSpecial.Items.Add(new ListViewItem(new[] { "Status[Z]",  "0" }));
 			lvSpecial.Items.Add(new ListViewItem(new[] { "Watchdog timer",  "0ms" }));
 		}

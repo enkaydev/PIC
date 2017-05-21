@@ -24,13 +24,13 @@ namespace PIC_Simulator.PIC
 			form = frm;
 		}
 
-		public void Aktualisieren(uint cycles)
+		public void Aktualisieren(uint cycles) //Überprüfung ob eingeschaltet
 		{
 			if (Aktiviert)
 			{
 				time += (1.0 / FREQUENCY) * cycles;
 
-				if (time > TimeOut * GetPreScale())
+				if (time > TimeOut * GetPreScale()) //Wenn Timer größer als TimeOut -> Programm reset
 				{
 					WDReset();
 				}
@@ -43,7 +43,7 @@ namespace PIC_Simulator.PIC
 
 		private void WDReset()
 		{
-			if (!programm.IsSleeping)
+			if (!programm.IsSleeping) //Programm ist nicht im Sleep -> Programm wird geresetet
 			{
 				// >> WATCHDOG RESET <<
 
@@ -53,7 +53,7 @@ namespace PIC_Simulator.PIC
 				programm.SetRegisterOhneBank(PICProgramm.ADDR_STATUS, PICProgramm.STATUS_BIT_TO, false);
 				form.quartztimer.Stop();
 			}
-			else
+			else //Programm ist im Sleep -> SoftReset -> Programm "wacht auf"
 			{
 				// >> Wake Up <<
 
@@ -63,8 +63,8 @@ namespace PIC_Simulator.PIC
 			}
 		}
 
-		private uint GetPreScale()
-		{
+		private uint GetPreScale() //Vorskallierung Option-Register 3 bit werden binär interpretiert und geben Skalierung an (1:Binärwert)
+        {
 			bool prescale_mode = !programm.GetRegisterOhneBank(PICProgramm.ADDR_OPTION, PICProgramm.OPTION_BIT_PSA);
 
 			uint scale = 0;
@@ -79,7 +79,7 @@ namespace PIC_Simulator.PIC
 			return Prescale;
 		}
 
-		public void Reset()
+		public void Reset() //Reset setzt Timer auf 0
 		{
 			time = 0;
 		}
