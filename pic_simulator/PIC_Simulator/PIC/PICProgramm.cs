@@ -842,7 +842,7 @@ namespace PIC_Simulator.PIC
 				PCCounter = (int) (high | wert);
 			}
 
-			if (index == ADDR_INDF) // indirekte adresierung
+			if (index == ADDR_INDF) // indirekte Adresierung
 			{
 				if (Register[ADDR_FSR] % 0x80 != 0) Register[Register[ADDR_FSR]] = (byte)(wert & 0xFF);
 				return;
