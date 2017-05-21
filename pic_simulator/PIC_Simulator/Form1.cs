@@ -86,7 +86,7 @@ namespace PIC_Simulator
 			}
 		}
 
-		private void cmdOpenDoc_Click(object sender, EventArgs e)
+		private void cmdOpenDoc_Click(object sender, EventArgs e) // Funktion um externe PDF zu öffnen
 		{
 			string path = Path.GetTempFileName() + ".pdf";
 			File.WriteAllBytes(path, Resources.DataSheet);
@@ -114,7 +114,7 @@ namespace PIC_Simulator
 				box_CodeView.SelectionBackColor = Color.SteelBlue;
 			}
 		}
-		void HighlightBreakpoint(int line)
+		void HighlightBreakpoint(int line) //Breakpoint markieren
 		{
 			int i1 = box_CodeView.GetFirstCharIndexFromLine(line);
 			int i2 = box_CodeView.GetFirstCharIndexFromLine(line) + 4;
