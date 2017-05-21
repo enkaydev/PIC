@@ -1,0 +1,31 @@
+;TPicSim1
+;Programm zum Test des 16F84-Simulators.
+;Es werden alle Literal-Befehle gepr?ft
+;(c) St. Lehmann
+;Ersterstellung: 23.03.2016
+;
+
+;Definition einiger Symbole
+;zuerst Hardware-Register
+status   equ 03h
+ra       equ 05h
+rb       equ 06h
+
+;f?r den Benutzer frei verwendbare Register
+count    equ 0ch
+
+;Definition des Prozessors
+    device 16F84
+
+;Festlegen des Codebeginns
+    org 0
+start
+    movlw 11h           ;in W steht nun 11h, Statusreg. unver?ndert
+    MOVWF 05h
+
+    movlw 12h           ;in W steht nun 11h, Statusreg. unver?ndert
+    MOVWF 06h
+    
+ende
+    goto ende           ;Endlosschleife, verhindert Nirwana
+

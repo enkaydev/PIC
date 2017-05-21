@@ -1,0 +1,31 @@
+                    00001           ;TPicSim1
+                    00002           ;Programm zum Test des 16F84-Simulators.
+                    00003           ;Es werden alle Literal-Befehle gepr?ft
+                    00004           ;(c) St. Lehmann
+                    00005           ;Ersterstellung: 23.03.2016
+                    00006           ;
+                    00007           
+                    00008           ;Definition einiger Symbole
+                    00009           ;zuerst Hardware-Register
+                    00010           status   equ 03h
+                    00011           ra       equ 05h
+                    00012           rb       equ 06h
+                    00013           
+                    00014           ;f?r den Benutzer frei verwendbare Register
+                    00015           count    equ 0ch
+                    00016           
+                    00017           ;Definition des Prozessors
+                    00018           device 16F84
+                    00019           
+                    00020           ;Festlegen des Codebeginns
+                    00021           org 0
+                    00022  start    
+0000 3011           00023           movlw 11h           ;in W steht nun 11h, Statusreg. unver?n
+0001 0085           00024           MOVWF 05h
+                    00025           
+0002 3012           00026           movlw 12h           ;in W steht nun 11h, Statusreg. unver?n
+0003 0086           00027           MOVWF 06h
+                    00028             
+                    00029  ende     
+0004 2804           00030           goto ende           ;Endlosschleife, verhindert Nirwana
+                    00031           

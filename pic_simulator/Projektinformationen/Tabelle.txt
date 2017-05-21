@@ -1,0 +1,29 @@
+[ ] Inhaltsverz./Quellverz./Äußeres Ers.
+[ ] Darstellung /Prog.-struktur/all.Diagr.
+[ ] Befehlsbeschreibung + Diagramme
+[X] PDF-Hilfedatei aus Prog. aufrufen
+[/] Bedienkomfort
+[/] Kommentare sinnvoll und ausreich
+[/] Funkt., Meth., Klassen Befehlsnachbild.
+[/] Variablenbezeichner / Variablennamen
+[X] INIT-Werte bei RESET
+[X] Laufzeitzähler
+[X] Latchfunktion der IO-Register
+[X] frei wählbare Quarzfrequenz
+[X] Breakpoints
+[X] Hardwareansteuerung
+[X] Testprogramm 1 (Literalbefehle)
+[X] Testprogramm 2 (CALL, GOTO etc)
+[X] Testprogramm 3 (Byte Befehle ohne 4).
+[X] Testprogramm 4 (DECFSZ, RLF,  RRF...
+[X] Testprogramm 5 (Bitbefehle)
+[X] Testprogramm 6 (indirekte  Adressierung)
+[X] Testprogramm 7 (Timer 0 )
+[X] Ext. Taktgeber an RA4 + IO-Pin
+[X] Testprogramm 8 (Interrupts)
+[X] Testprogramm 9 (Sleep-Befehl)
+[X] Testprogramm 10 (PCL und PCLATH)
+[X] Testprogramm 11 (Watchdog, Vorteiler)
+[ ] Testprogramm 12 (EEPROM)
+[ ] Zusätzliche eignene Features
+[ ] Vorzeitige Abgabe

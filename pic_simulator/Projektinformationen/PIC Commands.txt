@@ -1,0 +1,42 @@
+
+public string ADDWF  = "000111dfffffff";
+public string ANDWF  = "000101dfffffff";
+public string CLRF   = "0000011fffffff";
+public string CLRW   = "0000010xxxxxxx";
+public string COMF   = "001001dfffffff";
+public string DECF   = "000011dfffffff";
+public string DECFSZ = "001011dfffffff";
+public string INCF   = "001010dfffffff";
+public string INCFSZ = "001111dfffffff";
+public string IORWF  = "000100dfffffff";
+public string MOVF   = "001000dfffffff";
+public string MOVWF  = "0000001fffffff";
+public string NOP1   = "00000000000000";
+public string NOP2   = "00000000100000";
+public string NOP3   = "00000001000000";
+public string NOP4   = "00000001100000";
+public string RLF    = "001101dfffffff";
+public string RRF    = "001100dfffffff";
+public string SUBWF  = "000010dfffffff";
+public string SWAPF  = "001110dfffffff";
+public string XORWF  = "000110dfffffff";
+
+public string BCF    = "0100bbbfffffff";
+public string BSF    = "0101bbbfffffff";
+public string BTFSC  = "0110bbbfffffff";
+public string BTFSS  = "0111bbbfffffff";
+
+public string ADDLW  = "11111xkkkkkkkk";
+public string ANDLW  = "111001kkkkkkkk";
+public string CALL   = "100kkkkkkkkkkk";
+public string CLRWDT = "00000001100100";
+public string GOTO   = "101kkkkkkkkkkk";
+public string IORLW  = "111000kkkkkkkk";
+public string MOVLW  = "1100xxkkkkkkkk";
+public string RETFIE = "00000000001001";
+public string RETLW  = "1101xxkkkkkkkk";
+public string RETURN = "00000000001000";
+public string SLEEP  = "00000001100011";
+public string SUBLW  = "11110xkkkkkkkk";
+public string XORLW  = "111010kkkkkkkk";
+
