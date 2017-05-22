@@ -196,7 +196,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1731, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1749, 28);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -408,7 +408,7 @@
             this.lbStack.FormattingEnabled = true;
             this.lbStack.ItemHeight = 16;
             this.lbStack.Location = new System.Drawing.Point(853, 96);
-            this.lbStack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lbStack.Margin = new System.Windows.Forms.Padding(4);
             this.lbStack.Name = "lbStack";
             this.lbStack.Size = new System.Drawing.Size(87, 436);
             this.lbStack.TabIndex = 19;
@@ -416,7 +416,7 @@
             // btn_RA_Tris_7
             // 
             this.btn_RA_Tris_7.Location = new System.Drawing.Point(1217, 559);
-            this.btn_RA_Tris_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_7.Name = "btn_RA_Tris_7";
             this.btn_RA_Tris_7.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_7.TabIndex = 20;
@@ -427,7 +427,7 @@
             // btn_RA_Tris_6
             // 
             this.btn_RA_Tris_6.Location = new System.Drawing.Point(1253, 559);
-            this.btn_RA_Tris_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_6.Name = "btn_RA_Tris_6";
             this.btn_RA_Tris_6.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_6.TabIndex = 21;
@@ -438,7 +438,7 @@
             // btn_RA_Tris_5
             // 
             this.btn_RA_Tris_5.Location = new System.Drawing.Point(1289, 559);
-            this.btn_RA_Tris_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_5.Name = "btn_RA_Tris_5";
             this.btn_RA_Tris_5.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_5.TabIndex = 22;
@@ -449,7 +449,7 @@
             // btn_RA_Tris_4
             // 
             this.btn_RA_Tris_4.Location = new System.Drawing.Point(1325, 559);
-            this.btn_RA_Tris_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_4.Name = "btn_RA_Tris_4";
             this.btn_RA_Tris_4.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_4.TabIndex = 23;
@@ -460,7 +460,7 @@
             // btn_RA_Tris_3
             // 
             this.btn_RA_Tris_3.Location = new System.Drawing.Point(1361, 559);
-            this.btn_RA_Tris_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_3.Name = "btn_RA_Tris_3";
             this.btn_RA_Tris_3.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_3.TabIndex = 24;
@@ -471,7 +471,7 @@
             // btn_RA_Tris_2
             // 
             this.btn_RA_Tris_2.Location = new System.Drawing.Point(1397, 559);
-            this.btn_RA_Tris_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_2.Name = "btn_RA_Tris_2";
             this.btn_RA_Tris_2.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_2.TabIndex = 25;
@@ -482,7 +482,7 @@
             // btn_RA_Tris_1
             // 
             this.btn_RA_Tris_1.Location = new System.Drawing.Point(1433, 559);
-            this.btn_RA_Tris_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_1.Name = "btn_RA_Tris_1";
             this.btn_RA_Tris_1.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_1.TabIndex = 26;
@@ -493,7 +493,7 @@
             // btn_RA_1
             // 
             this.btn_RA_1.Location = new System.Drawing.Point(1433, 595);
-            this.btn_RA_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_1.Name = "btn_RA_1";
             this.btn_RA_1.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_1.TabIndex = 33;
@@ -504,7 +504,7 @@
             // btn_RA_2
             // 
             this.btn_RA_2.Location = new System.Drawing.Point(1397, 595);
-            this.btn_RA_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_2.Name = "btn_RA_2";
             this.btn_RA_2.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_2.TabIndex = 32;
@@ -515,7 +515,7 @@
             // btn_RA_3
             // 
             this.btn_RA_3.Location = new System.Drawing.Point(1361, 595);
-            this.btn_RA_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_3.Name = "btn_RA_3";
             this.btn_RA_3.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_3.TabIndex = 31;
@@ -526,7 +526,7 @@
             // btn_RA_4
             // 
             this.btn_RA_4.Location = new System.Drawing.Point(1325, 595);
-            this.btn_RA_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_4.Name = "btn_RA_4";
             this.btn_RA_4.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_4.TabIndex = 30;
@@ -537,7 +537,7 @@
             // btn_RA_5
             // 
             this.btn_RA_5.Location = new System.Drawing.Point(1289, 595);
-            this.btn_RA_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_5.Name = "btn_RA_5";
             this.btn_RA_5.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_5.TabIndex = 29;
@@ -548,7 +548,7 @@
             // btn_RA_6
             // 
             this.btn_RA_6.Location = new System.Drawing.Point(1253, 595);
-            this.btn_RA_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_6.Name = "btn_RA_6";
             this.btn_RA_6.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_6.TabIndex = 28;
@@ -559,7 +559,7 @@
             // btn_RA_7
             // 
             this.btn_RA_7.Location = new System.Drawing.Point(1217, 595);
-            this.btn_RA_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_7.Name = "btn_RA_7";
             this.btn_RA_7.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_7.TabIndex = 27;
@@ -590,7 +590,7 @@
             // btn_RB_1
             // 
             this.btn_RB_1.Location = new System.Drawing.Point(1433, 688);
-            this.btn_RB_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_1.Name = "btn_RB_1";
             this.btn_RB_1.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_1.TabIndex = 48;
@@ -601,7 +601,7 @@
             // btn_RB_2
             // 
             this.btn_RB_2.Location = new System.Drawing.Point(1397, 688);
-            this.btn_RB_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_2.Name = "btn_RB_2";
             this.btn_RB_2.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_2.TabIndex = 47;
@@ -612,7 +612,7 @@
             // btn_RB_3
             // 
             this.btn_RB_3.Location = new System.Drawing.Point(1361, 688);
-            this.btn_RB_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_3.Name = "btn_RB_3";
             this.btn_RB_3.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_3.TabIndex = 46;
@@ -623,7 +623,7 @@
             // btn_RB_4
             // 
             this.btn_RB_4.Location = new System.Drawing.Point(1325, 688);
-            this.btn_RB_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_4.Name = "btn_RB_4";
             this.btn_RB_4.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_4.TabIndex = 45;
@@ -634,7 +634,7 @@
             // btn_RB_5
             // 
             this.btn_RB_5.Location = new System.Drawing.Point(1289, 688);
-            this.btn_RB_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_5.Name = "btn_RB_5";
             this.btn_RB_5.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_5.TabIndex = 44;
@@ -645,7 +645,7 @@
             // btn_RB_6
             // 
             this.btn_RB_6.Location = new System.Drawing.Point(1253, 688);
-            this.btn_RB_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_6.Name = "btn_RB_6";
             this.btn_RB_6.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_6.TabIndex = 43;
@@ -656,7 +656,7 @@
             // btn_RB_7
             // 
             this.btn_RB_7.Location = new System.Drawing.Point(1217, 688);
-            this.btn_RB_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_7.Name = "btn_RB_7";
             this.btn_RB_7.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_7.TabIndex = 42;
@@ -667,7 +667,7 @@
             // btn_RB_Tris_1
             // 
             this.btn_RB_Tris_1.Location = new System.Drawing.Point(1433, 653);
-            this.btn_RB_Tris_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_1.Name = "btn_RB_Tris_1";
             this.btn_RB_Tris_1.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_1.TabIndex = 41;
@@ -678,7 +678,7 @@
             // btn_RB_Tris_2
             // 
             this.btn_RB_Tris_2.Location = new System.Drawing.Point(1397, 653);
-            this.btn_RB_Tris_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_2.Name = "btn_RB_Tris_2";
             this.btn_RB_Tris_2.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_2.TabIndex = 40;
@@ -689,7 +689,7 @@
             // btn_RB_Tris_3
             // 
             this.btn_RB_Tris_3.Location = new System.Drawing.Point(1361, 653);
-            this.btn_RB_Tris_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_3.Name = "btn_RB_Tris_3";
             this.btn_RB_Tris_3.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_3.TabIndex = 39;
@@ -700,7 +700,7 @@
             // btn_RB_Tris_4
             // 
             this.btn_RB_Tris_4.Location = new System.Drawing.Point(1325, 653);
-            this.btn_RB_Tris_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_4.Name = "btn_RB_Tris_4";
             this.btn_RB_Tris_4.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_4.TabIndex = 38;
@@ -711,7 +711,7 @@
             // btn_RB_Tris_5
             // 
             this.btn_RB_Tris_5.Location = new System.Drawing.Point(1289, 653);
-            this.btn_RB_Tris_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_5.Name = "btn_RB_Tris_5";
             this.btn_RB_Tris_5.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_5.TabIndex = 37;
@@ -722,7 +722,7 @@
             // btn_RB_Tris_6
             // 
             this.btn_RB_Tris_6.Location = new System.Drawing.Point(1253, 653);
-            this.btn_RB_Tris_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_6.Name = "btn_RB_Tris_6";
             this.btn_RB_Tris_6.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_6.TabIndex = 36;
@@ -733,7 +733,7 @@
             // btn_RB_Tris_7
             // 
             this.btn_RB_Tris_7.Location = new System.Drawing.Point(1217, 653);
-            this.btn_RB_Tris_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_7.Name = "btn_RB_Tris_7";
             this.btn_RB_Tris_7.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_7.TabIndex = 35;
@@ -744,7 +744,7 @@
             // btn_RB_0
             // 
             this.btn_RB_0.Location = new System.Drawing.Point(1469, 688);
-            this.btn_RB_0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_0.Name = "btn_RB_0";
             this.btn_RB_0.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_0.TabIndex = 53;
@@ -755,7 +755,7 @@
             // btn_RB_Tris_0
             // 
             this.btn_RB_Tris_0.Location = new System.Drawing.Point(1469, 653);
-            this.btn_RB_Tris_0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RB_Tris_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RB_Tris_0.Name = "btn_RB_Tris_0";
             this.btn_RB_Tris_0.Size = new System.Drawing.Size(28, 28);
             this.btn_RB_Tris_0.TabIndex = 52;
@@ -766,7 +766,7 @@
             // btn_RA_0
             // 
             this.btn_RA_0.Location = new System.Drawing.Point(1469, 595);
-            this.btn_RA_0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_0.Name = "btn_RA_0";
             this.btn_RA_0.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_0.TabIndex = 51;
@@ -777,7 +777,7 @@
             // btn_RA_Tris_0
             // 
             this.btn_RA_Tris_0.Location = new System.Drawing.Point(1469, 559);
-            this.btn_RA_Tris_0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_RA_Tris_0.Margin = new System.Windows.Forms.Padding(4);
             this.btn_RA_Tris_0.Name = "btn_RA_Tris_0";
             this.btn_RA_Tris_0.Size = new System.Drawing.Size(28, 28);
             this.btn_RA_Tris_0.TabIndex = 50;
@@ -788,7 +788,7 @@
             // edRS232Log
             // 
             this.edRS232Log.Location = new System.Drawing.Point(1505, 608);
-            this.edRS232Log.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edRS232Log.Margin = new System.Windows.Forms.Padding(4);
             this.edRS232Log.Multiline = true;
             this.edRS232Log.Name = "edRS232Log";
             this.edRS232Log.Size = new System.Drawing.Size(208, 224);
@@ -798,7 +798,7 @@
             // 
             this.cbxComPorts.FormattingEnabled = true;
             this.cbxComPorts.Location = new System.Drawing.Point(1505, 539);
-            this.cbxComPorts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxComPorts.Margin = new System.Windows.Forms.Padding(4);
             this.cbxComPorts.Name = "cbxComPorts";
             this.cbxComPorts.Size = new System.Drawing.Size(208, 24);
             this.cbxComPorts.TabIndex = 55;
@@ -806,7 +806,7 @@
             // btnRSConnect
             // 
             this.btnRSConnect.Location = new System.Drawing.Point(1505, 572);
-            this.btnRSConnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRSConnect.Margin = new System.Windows.Forms.Padding(4);
             this.btnRSConnect.Name = "btnRSConnect";
             this.btnRSConnect.Size = new System.Drawing.Size(100, 28);
             this.btnRSConnect.TabIndex = 56;
@@ -817,7 +817,7 @@
             // btnRSDisconnect
             // 
             this.btnRSDisconnect.Location = new System.Drawing.Point(1616, 571);
-            this.btnRSDisconnect.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRSDisconnect.Margin = new System.Windows.Forms.Padding(4);
             this.btnRSDisconnect.Name = "btnRSDisconnect";
             this.btnRSDisconnect.Size = new System.Drawing.Size(100, 28);
             this.btnRSDisconnect.TabIndex = 57;
@@ -838,7 +838,7 @@
             // edClockAddr
             // 
             this.edClockAddr.Location = new System.Drawing.Point(1216, 770);
-            this.edClockAddr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edClockAddr.Margin = new System.Windows.Forms.Padding(4);
             this.edClockAddr.Name = "edClockAddr";
             this.edClockAddr.Size = new System.Drawing.Size(84, 22);
             this.edClockAddr.TabIndex = 59;
@@ -847,7 +847,7 @@
             // edClockBit
             // 
             this.edClockBit.Location = new System.Drawing.Point(1317, 770);
-            this.edClockBit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edClockBit.Margin = new System.Windows.Forms.Padding(4);
             this.edClockBit.Name = "edClockBit";
             this.edClockBit.Size = new System.Drawing.Size(84, 22);
             this.edClockBit.TabIndex = 60;
@@ -856,7 +856,7 @@
             // btnClockStart
             // 
             this.btnClockStart.Location = new System.Drawing.Point(1411, 770);
-            this.btnClockStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClockStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnClockStart.Name = "btnClockStart";
             this.btnClockStart.Size = new System.Drawing.Size(65, 28);
             this.btnClockStart.TabIndex = 61;
@@ -867,7 +867,7 @@
             // edCLockFreq
             // 
             this.edCLockFreq.Location = new System.Drawing.Point(1216, 802);
-            this.edCLockFreq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.edCLockFreq.Margin = new System.Windows.Forms.Padding(4);
             this.edCLockFreq.Name = "edCLockFreq";
             this.edCLockFreq.Size = new System.Drawing.Size(185, 22);
             this.edCLockFreq.TabIndex = 62;
@@ -876,7 +876,7 @@
             // WakeUpButton
             // 
             this.WakeUpButton.Location = new System.Drawing.Point(339, 38);
-            this.WakeUpButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.WakeUpButton.Margin = new System.Windows.Forms.Padding(4);
             this.WakeUpButton.Name = "WakeUpButton";
             this.WakeUpButton.Size = new System.Drawing.Size(84, 26);
             this.WakeUpButton.TabIndex = 63;
@@ -887,7 +887,7 @@
             // btnWD1
             // 
             this.btnWD1.Location = new System.Drawing.Point(455, 22);
-            this.btnWD1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWD1.Margin = new System.Windows.Forms.Padding(4);
             this.btnWD1.Name = "btnWD1";
             this.btnWD1.Size = new System.Drawing.Size(168, 28);
             this.btnWD1.TabIndex = 64;
@@ -898,7 +898,7 @@
             // btnWD0
             // 
             this.btnWD0.Location = new System.Drawing.Point(455, 59);
-            this.btnWD0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnWD0.Margin = new System.Windows.Forms.Padding(4);
             this.btnWD0.Name = "btnWD0";
             this.btnWD0.Size = new System.Drawing.Size(168, 28);
             this.btnWD0.TabIndex = 65;
@@ -909,7 +909,7 @@
             // tbWD
             // 
             this.tbWD.Location = new System.Drawing.Point(632, 22);
-            this.tbWD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbWD.Margin = new System.Windows.Forms.Padding(4);
             this.tbWD.Name = "tbWD";
             this.tbWD.Size = new System.Drawing.Size(76, 22);
             this.tbWD.TabIndex = 66;
@@ -964,7 +964,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1731, 852);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1749, 863);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);

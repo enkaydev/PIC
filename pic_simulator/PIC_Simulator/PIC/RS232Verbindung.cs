@@ -22,7 +22,7 @@ namespace PIC_Simulator.PIC
 			timer.Interval = 500;
 			timer.Enabled = true;
 		}
-        // Hören oder Senden -> Senden oder Empfangen
+        // Tick Event für getimte Übertragung 
 		private void TimerOnTick(object sender, EventArgs eventArgs)
 		{
 			if (ComPort == null) return;
@@ -103,7 +103,7 @@ namespace PIC_Simulator.PIC
 
 			Send_RS232(send);
 		}
-        // Sendungsverlauf in Textpost schreiben
+        // Comport und Sendungsverlauf schreiben
 		private void Send_RS232(string txt)
 		{
 			if (txt != string.Empty)
@@ -112,7 +112,7 @@ namespace PIC_Simulator.PIC
 				TextBox.Text += "> " + txt + "\r\n";
 			}
 		}
-        // Empfangen des Datenstrings
+        // Empfangen des Datenstrings und in Log anzeigen 
 		private void RecieveData()
 		{
 			string x = ReadDataSegment();
@@ -166,7 +166,7 @@ namespace PIC_Simulator.PIC
 
 			return "" + c1 + c2;
 		}
-
+        // Aufteilen des Datensegments in zwei Bytes 
 		private Tuple<uint, uint> decodeBytes(string s)
 		{
 			int i0 = s[0] - 0x30;
@@ -186,7 +186,7 @@ namespace PIC_Simulator.PIC
 				return null;
 			}
 		}
-        // Datensegment lesen 
+        // Datensegment aus Datenstrom lesen und Trennen 
 		private string ReadDataSegment()
 		{
 			string s = "";

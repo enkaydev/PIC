@@ -21,7 +21,7 @@ namespace PIC_Simulator.PIC
 
 	public class PICProgramm
 	{
-        // Konstanten für Addressierung 
+        // Public named address 
 		public const uint ADDR_INDF = 0x00;
 		public const uint ADDR_TMR0 = 0x01;
 		public const uint ADDR_PCL = 0x02;
