@@ -156,7 +156,7 @@ namespace PIC_Simulator
 
 			if (finished) { quartztimer.Stop(); MessageBox.Show("Finished"); return; }
 
-			if (programm.Breakpoints.Contains(programm.befehle[programm.PCCounter].labelnummer)) quartztimer.Stop();
+			if (programm.Breakpoints.Contains(programm.befehle[programm.PCCounter].labelnummer)) quartztimer.Stop(); // quartztimer wird gestopt und dadurch wird programm angehalten
 
 			OberflaecheAktualisieren();
 		}
